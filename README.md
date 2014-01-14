@@ -1,4 +1,6 @@
-testingdojo
+Testing Dojos
 ===========
 
-Testing Dojos 
+Testing Dojos:
+
+* Protractor
