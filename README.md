@@ -3,4 +3,4 @@ Testing Dojos
 
 Testing Dojos:
 
-* Protractor
+* Protractor E2E tests
