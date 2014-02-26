@@ -1,11 +1,9 @@
 exports.config = {
-
-  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
   
-  chromeDriver: './node_modules/protractor/selenium/chromedriver',
+  seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.39.0.jar',
 
   specs: [
-    'tests/*.js'
+    'tests/todo2.js'
   ],
 
   seleniumArgs: ['-browserTimeout=60'],
@@ -14,8 +12,8 @@ exports.config = {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://www.angularjs.org',
+  baseUrl: 'http://localhost:8000',
 
   allScriptsTimeout: 30000
 
-}
+};

@@ -11,7 +11,7 @@ xdescribe("angularjs basic demo", function(){
     element(by.model("yourName")).sendKeys("guys");
 
     expect(element(by.binding("yourName")).getText()).toBe("Hello guys!");
-  })
+  });
 });
 
 describe("angularjs todo demo", function(){
