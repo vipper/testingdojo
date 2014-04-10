@@ -6,10 +6,10 @@ describe('todo list', function() {
   });
 
   it('should add a task', function() {
-    // page.typeTaskName("awesome task");
-    // page.submitTask();
-    var e = element(by.repeater('todo in todos').row(0).column('text'));
+    page.typeTaskName("awesome task");
+    page.submitTask();
+    var e = element(by.repeater('todo in todos').row("0").column("text"));
     expect(e.getText()).toBe('awesome task');
   });
 
-}); 
+});
