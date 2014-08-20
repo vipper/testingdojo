@@ -4,7 +4,7 @@ exports.config = {
   chromeDriver: './node_modules/protractor/selenium/chromedriver',
   chromeOnly: true,
   specs: [
-    'tests/teste1.js'
+    'tests/test1.js'
   ],
 
   seleniumArgs: ['-browserTimeout=60'],

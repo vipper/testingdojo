@@ -31,15 +31,12 @@ describe("angularjs todo demo", function(){
   });
 
   it('changes the todoText css class when clicking the checkBox', function() {
-    var todoList = element.all(by.repeater('todo in todos'));
-    var firstElement = todoList.get(0);
-
-    var originalCssClass = firstElement.findElement(by.binding("text")).getAttribute('class');
-
-    firstElement.findElement(by.model("done")).click();
-
-    var newCssClass = firstElement.findElement(by.binding("text")).getAttribute('class');
-
+    var item = element.all(by.repeater('todo in todos')).first();
+      
+    var originalCssClass = item.element(by.css("span")).getAttribute('class');
+    item.element(by.model("todo.done")).click();
+    var newCssClass = item.element(by.css("span")).getAttribute('class');
     expect(originalCssClass).not.toEqual(newCssClass);
+
   });
-})
+});
