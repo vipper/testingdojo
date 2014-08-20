@@ -34,11 +34,11 @@ describe("angularjs todo demo", function(){
     var todoList = element.all(by.repeater('todo in todos'));
     var firstElement = todoList.get(0);
 
-    var originalCssClass = firstElement.findElement(by.binding("texto")).getAttribute('class');
+    var originalCssClass = firstElement.findElement(by.binding("text")).getAttribute('class');
 
     firstElement.findElement(by.model("done")).click();
 
-    var newCssClass = firstElement.findElement(by.binding("texto")).getAttribute('class');
+    var newCssClass = firstElement.findElement(by.binding("text")).getAttribute('class');
 
     expect(originalCssClass).not.toEqual(newCssClass);
   });

@@ -20,7 +20,7 @@ describe('Todo', function(){
 
   it('should add a task by clicking on button', function () {
     element(by.model("todoText")).sendKeys("Buy milk");
-    element(by.buttonText("add")).click();
+    //element(by.buttonText("add")).click();
 
     expect(element(by.binding('remaining()')).getText()).toEqual('2 of 3 remaining');
   });
